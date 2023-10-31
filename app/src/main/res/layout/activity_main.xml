@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_weight="1"
+        android:text="Xaijea's Waffle"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60sp"
+        android:layout_weight="1"
+        android:text="Waffle Flavor"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/flavourRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <RadioButton
+            android:id="@+id/classicwaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:text="ClassicWaffle" />
+
+        <RadioButton
+            android:id="@+id/chocolatewaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="ChocolateWaffle" />
+
+        <RadioButton
+            android:id="@+id/blueberrywaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:text="BlueberryWaffle" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_weight="1"
+        android:text="Waffle Size"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/sizeRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/pequenowaffles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alignment_selector"
+            android:text="PequenoWaffles" />
+
+        <RadioButton
+            android:id="@+id/medianowaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alignment_selector"
+            android:text="MedianoWaffle" />
+
+        <RadioButton
+            android:id="@+id/grandewaffle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/alignment_selector"
+            android:text="GrandeWaffle" />
+
+    </RadioGroup>
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30sp"
+        android:layout_weight="1"
+        android:text="Waffle Toppings"
+        android:textAlignment="center" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/sprinkles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sprinkles" />
+
+            <CheckBox
+                android:id="@+id/chocolate_bits"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chocolate Bits" />
+
+            <CheckBox
+                android:id="@+id/nips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nips" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <CheckBox
+                android:id="@+id/oreo_cookies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Oreo Cookies" />
+
+            <CheckBox
+                android:id="@+id/sticko"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Stick-o" />
+
+            <CheckBox
+                android:id="@+id/marshmallow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marshmallow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/calculateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60sp"
+        android:layout_marginTop="30sp"
+        android:layout_marginRight="60sp"
+        android:text="Calculate" />
+
+</LinearLayout>
